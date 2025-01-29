@@ -4,19 +4,19 @@ function Intro() {
   const skills = ["Angular", "React", "Rails", "Spring Boot", "Node.js"];
 
   return (
-    <div className="flex items-center justify-center w-full bg-gray-900 py-16 mt-10 rounded-lg">
-      <div className="w-full max-w-screen-md px-6 py-8 bg-transparent text-white rounded-lg flex flex-row gap-10">
-        {/* Name on the left */}
-        <div className="flex-1">
-          <h1 className="text-4xl md:text-6xl shadow-md text-teal-400 font-bold mb-4">Alex Sterrantino</h1>
-          <p className="text-3xl">Full-stack Developer</p>
+    <div className="flex items-center justify-center w-full bg-gray-900 py-8 md:py-16 mt-10 rounded-lg">
+      <div className="w-full max-w-screen-md px-4 md:px-6 py-8 bg-transparent text-white rounded-lg flex flex-col md:flex-row gap-10">
+        {/* Name on the top for mobile, left for larger screens */}
+        <div className="flex-1 text-center md:text-left">
+          <h1 className="text-3xl md:text-6xl shadow-md text-teal-400 font-bold mb-4">Alex Sterrantino</h1>
+          <p className="text-xl md:text-3xl">Full-stack Developer</p>
           <br />
           <p className="font-normal text-base leading-relaxed mb-8 italic">
             I build accessible and functional digital solutions, from professional tools to business applications.
           </p>
           {/* Skills Section */}
-          <h2 className="text-xl font-semibold mb-4">Skills</h2>
-          <p className="flex flex-wrap gap-3 items-center justify-start text-sm text-gray-700 dark:text-gray-300">
+          <h2 className="text-lg md:text-xl font-semibold mb-4">Skills</h2>
+          <p className="flex flex-wrap gap-3 items-center justify-center md:justify-start text-sm text-gray-700 dark:text-gray-300">
             {skills.map(skill => (
               <span
                 key={skill}
@@ -28,8 +28,8 @@ function Intro() {
           </p>
         </div>
 
-        {/* Description on the right */}
-        <div className="flex-1">
+        {/* Description on the bottom for mobile, right for larger screens */}
+        <div className="flex-1 text-center md:text-left">
           <p className="font-normal text-base leading-relaxed mb-8">
             Initially pursuing a Business Major, I later transitioned to the Web Development program at Flatiron School in NYC. Shortly after, I landed a Software Developer position at CSX, where I began building my career in tech. 
             <br />
